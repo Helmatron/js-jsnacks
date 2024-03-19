@@ -15,11 +15,17 @@ console.log(vipname)
 const name = prompt('Inserire il nome')
 console.log(name)
 
+// CICLO: serve un ciclo di verifica dell'array
+for (let i = 0; i < vipname.length; i++) {
+    
 // SE il nome è uguale a quello nella lista
-if (name == vipname) {
+if (name === vipname[i]) {
     // ALLORA può accedere all'evento
     console.log('Puoi partecipare alla festa!')
-    // Altrimenti non può
-} else {
+    break; // uscita da ciclo dopo aver trovato il nome
+
+} // Altrimenti non può
+else {
     console.log('Siamo spiacenti ma non può partecipare alla festa')
-}
+}}
+
